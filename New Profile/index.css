@@ -1,0 +1,88 @@
+body {
+        height: 1000px; 
+        background-image: linear-gradient(to right  ,rgb(10, 8, 8), rgb(28, 28, 39));
+        color: white;
+    }
+    
+.div-head {
+    text-align: center;
+    padding: 5%;
+    
+}
+.para-p {
+    font: size 85px;;
+  }
+
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+}
+.progress-circle {
+    transform: rotate(-90deg);
+}
+.progress {
+    transition: stroke-dashoffset 0.5s linear;
+    stroke:yellow;
+    stroke-width: 10;
+    fill: none;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.circle-text {
+    font-size: 20px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.circle-center-name {
+    text-align: center;
+}
+.per-skils {
+        padding: 25px;
+        
+}
+@media screen and (min-width:768px) {
+
+    .div-head {
+        text-align: start;display: flex;
+    }
+
+    .para-p {
+            width: 50%;
+            font-size: 100%;
+    }
+    .head-div {
+        width: 50%;
+    }
+    .img-div {
+        width: 50%;
+        text-align: center;
+    }
+    .img {
+        width: 50%;
+    }
+
+    .div-circle {
+        display: flex;
+    }
+    .progress-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10%;
+  }
+  .about-profile {
+       display: flex;
+       
+  }
+  .about-sen {
+    width: 60%;
+    font-size: larger;
+    font-family: arial,sans-serif;
+  }
+  .sen-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+}

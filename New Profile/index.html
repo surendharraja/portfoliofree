@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+        <style>
+            body {
+  /* margin: 0; */
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+ </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo" style="background: linear-gradient(to bottom right, #e05738, #1688aa);-webkit-background-clip: text;-webkit-text-fill-color: transparent">Profile</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services</a>
+            <ul class="dropdown-content">
+              <li><a href="#web">Web Development</a></li>
+              <li><a href="#design">Design</a></li>
+              <li><a href="#seo">SEO</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+         <div class="div-head" >
+                 <div class="head-div">
+                        <h1 style="background: linear-gradient(to bottom right, #e05738, #1688aa);-webkit-background-clip: text;-webkit-text-fill-color: transparent" >SURENDHIRAN</h1>
+                        <p style="font-weight: bolder;font-size: larger;background: linear-gradient(to bottom right, #3633d6, #d82d36);-webkit-background-clip: text;-webkit-text-fill-color: transparent">Front-End Developer</p>
+                        <p class="para-p">A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away”</p>
+                 </div>
+                 <div class="img-div">
+                        <img style="border-radius: 50%;" class="img" src="./image/image.jpg" alt="">
+                 </div>  
+        </div>
+        <div style="text-align: center;">        <h1 class="head1">Personal Skils</h1> </div>
+        <div class="per-skils">
+        <div class="progress-container">
+                        <div class="circle-center-name">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="10" fill="none"></circle>
+                    <circle class="progress progress-1" cx="80" cy="80" r="70"></circle>
+                    <text id="percentage-1" x="80" y="85" class="circle-text" >0%</text>
+                          </svg>
+                          <p>HTML</p>
+                        </div>
+                        <div  class="circle-center-name">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="10" fill="none"></circle>
+                    <circle class="progress progress-2" cx="80" cy="80" r="70"></circle>
+                    <text id="percentage-2" x="80" y="85" class="circle-text">0%</text>
+                </svg>
+                <p>CSS</p>
+            </div>
+            <div class="circle-center-name">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="10" fill="none"></circle>
+                    <circle class="progress progress-3" cx="80" cy="80" r="70"></circle>
+                    <text id="percentage-3" x="80" y="85" class="circle-text">0%</text>
+                </svg>
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="circle-center-name">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="10" fill="none"></circle>
+                    <circle class="progress progress-4" cx="80" cy="80" r="70"></circle>
+                    <text id="percentage-4" x="80" y="85" class="circle-text">0%</text>
+                </svg>
+                <p>JQUARY</p>
+            </div>
+                      </div>
+        </div>
+        <div class="div-what" style="">
+          <h4 style=" background: linear-gradient(to bottom right, #e05738, #1688aa);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline-block;">WHAT I DO</h4>
+          <P class="text-para" class="head1" style="background: linear-gradient(to bottom right, #e05738, #1688aa);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">My Specializations</P>
+          <div class="web-photo">
+           <div class="img-width">
+             <img class="img-size" src="./image/webphoto.jfif" alt="">
+           </div>
+           <div class="para-width">
+                  <h1 class="head1">Web Development</h1>
+                <p class="para-content">
+                   As a dedicated frontend developer, I specialize in
+                 creating intuitive, responsive, and visually appealing
+                 web interfaces. With a keen eye for detail and a passion
+                 for innovative design, I transform complex requirements
+                 into seamless user experiences.
+                   </p>
+              </div>
+          </div>
+   </div>
+
+
+        <div>
+              <div style="text-align: center;">
+                     <h1 class="head1">About</h1>
+              </div>
+              <div class="about-profile">
+                <div class="image-div" >
+                            <img style="border-radius: 50%;" src="image/image.jpg" alt="">         
+                 </div>
+                    <div class="sen-para">
+                            <h3>I'am Surendhiran</h3>
+                            <p class="about-sen">I'm a Surendhiran based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
+                    </div>
+              </div>
+          </div>
+
+          <div class="person-skils">
+                <h1 style="background: linear-gradient(to bottom right, #e05738, #1688aa);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Personal Skils</h1>
+          <div class="per-skils2">
+              <img class="per-skils2img" src="./image/perskils.png"  alt="">
+              <div class="gap">
+                <h1>70%</h1>
+                <h4>Front-End Development</h4>
+              </div>
+          </div>
+          <div class="per-skils2">
+            <img class="per-skils2img" src="./image/ereser.png"  alt="">
+            <div class="gap">
+              <h1>80%</h1>
+              <h4>Problem Solving</h4>
+            </div>
+        </div>
+        <div class="per-skils2">
+          <img class="per-skils2img" src=""  alt="">
+          <div class="gap">
+            <h1>80%</h1>
+            <h4>Clear error logs</h4>
+          </div>
+      </div>
+              </div>
+
+             <div class="bio-data">
+                    <h3 id="idbio" style="background: linear-gradient(to bottom right, #e05738, #1688aa);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Biography</h3>
+             <div class="bio-div">
+                <div>
+                   <h2>Name</h2>
+                   <p style="opacity: 0.8;font-size: larger;">Surendhiran</p>
+                   <h2 >E-Mail</h2>
+                   <p style="opacity: 0.8;font-size: larger;">Surendhar0017@gmail.com</p>
+                   </div>
+                   <div class="bio-data2">
+                    <h2>BirthDay</h2>
+                    <p style="opacity: 0.8;font-size: larger;">06-07-2001</p>
+                    <h2 >Phone</h2>
+                    <p style="opacity: 0.8;font-size: larger;">9952385466</p>
+                    </div>
+             </div>
+             <hr style="margin-top: 10%;">
+             
+                  </div> 
+      
+         <script src="index.js">
+            
+            
+document.getElementById("hamburger").addEventListener("click", function () {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+});
+         </script>
+</body>
+</html>
